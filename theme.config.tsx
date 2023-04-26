@@ -1,18 +1,33 @@
-import React from 'react'
-import { DocsThemeConfig } from 'nextra-theme-docs'
+import { useRouter } from "next/router";
+import { DocsThemeConfig, useConfig } from "nextra-theme-docs";
 
 const config: DocsThemeConfig = {
-  logo: <span>My Project</span>,
+  logo: <span>Let's Do This - Public API</span>,
   project: {
-    link: 'https://github.com/shuding/nextra-docs-template',
+    link: "https://github.com/stampedeapp/api-docs",
   },
-  chat: {
-    link: 'https://discord.com',
-  },
-  docsRepositoryBase: 'https://github.com/shuding/nextra-docs-template',
-  footer: {
-    text: 'Nextra Docs Template',
-  },
-}
+  head: () => {
+    const { asPath, defaultLocale, locale } = useRouter();
+    const { title } = useConfig();
+    const pageTitle = title + " - Let's Do This API Docs";
+    const url =
+      "https://api-docs.letsdothis.com" +
+      (defaultLocale === locale ? asPath : `/${locale}${asPath}`);
 
-export default config
+    return (
+      <>
+        <title>{pageTitle}</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta property="og:url" content={url} />
+        <meta property="og:title" content={pageTitle} />
+        <meta property="og:description" content={"Let's Do This API Docs"} />
+      </>
+    );
+  },
+  docsRepositoryBase: "https://github.com/stampedeapp/api-docs",
+  footer: {
+    text: "LDT API Docs",
+  },
+};
+
+export default config;

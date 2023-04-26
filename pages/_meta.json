@@ -1,15 +1,18 @@
 {
-  "index": "Introduction",
-  "another": "Another Page",
-  "advanced": "Advanced (A Folder)",
+  "index": {
+    "title": "Introduction"
+  },
+  "gettingStarted": "Getting Started",
+  "quickstarts": "Quickstart",
   "about": {
     "title": "About",
-    "type": "page"
+    "type": "page",
+    "href": "https://www.letsdothis.com/about"
   },
   "contact": {
     "title": "Contact ↗",
     "type": "page",
-    "href": "https://twitter.com/shuding_",
+    "href": "https://organizers.letsdothis.com/",
     "newWindow": true
   }
 }

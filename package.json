@@ -1,7 +1,7 @@
 {
-  "name": "nextra-docs-template",
+  "name": "api-docs",
   "version": "0.0.1",
-  "description": "Nextra docs template",
+  "description": "Documentation for the Let's Do This Public API",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -9,16 +9,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/shuding/nextra-docs-template.git"
+    "url": "git+https://github.com/stampedeapp/api-docs.git"
   },
   "author": "Shu Ding <g@shud.in>",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/shuding/nextra-docs-template/issues"
-  },
-  "homepage": "https://github.com/shuding/nextra-docs-template#readme",
+  "homepage": "https://github.com/stampedeapp/api-docs",
   "dependencies": {
-    "next": "^13.0.6",
+    "next": "13.3.0",
     "nextra": "latest",
     "nextra-theme-docs": "latest",
     "react": "^18.2.0",
