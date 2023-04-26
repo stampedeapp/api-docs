@@ -2,8 +2,15 @@
   "index": {
     "title": "Introduction"
   },
+  "---": {
+    "type": "separator"
+  },
   "gettingStarted": "Getting Started",
   "quickstarts": "Quickstart",
+  "----": {
+    "type": "separator"
+  },
+  "reference": "Reference",
   "about": {
     "title": "About",
     "type": "page",
