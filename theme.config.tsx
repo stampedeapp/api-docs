@@ -21,6 +21,7 @@ const config: DocsThemeConfig = {
         <meta property="og:url" content={url} />
         <meta property="og:title" content={pageTitle} />
         <meta property="og:description" content={"Let's Do This API Docs"} />
+        <link href="globals.css" rel="stylesheet"></link>
       </>
     );
   },
