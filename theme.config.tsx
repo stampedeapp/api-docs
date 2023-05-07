@@ -9,7 +9,7 @@ const config: DocsThemeConfig = {
   head: () => {
     const { asPath, defaultLocale, locale } = useRouter();
     const { title } = useConfig();
-    const pageTitle = title + " - Let's Do This API Docs";
+    const pageTitle = title + " - Let's Do This Public API Docs";
     const url =
       "https://api-docs.letsdothis.com" +
       (defaultLocale === locale ? asPath : `/${locale}${asPath}`);
@@ -27,7 +27,7 @@ const config: DocsThemeConfig = {
   },
   docsRepositoryBase: "https://github.com/stampedeapp/api-docs",
   footer: {
-    text: "LDT API Docs",
+    text: "LDT Public API Docs",
   },
 };
 

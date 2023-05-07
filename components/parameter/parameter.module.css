@@ -1,0 +1,30 @@
+.container {
+  @apply py-4;
+  @apply pl-4;
+}
+
+.splitter {
+  @apply my-2 h-px border-t-0 bg-slate-200 opacity-100 dark:opacity-50
+}
+
+.name {
+  @apply text-xs text-black font-bold; 
+  @apply bg-slate-100;
+  @apply px-4 py-2;
+  @apply rounded;
+}
+
+.type {
+  @apply text-xs text-slate-500 font-normal; 
+  @apply pl-8;
+}
+
+.required {
+  @apply text-xs text-sky-600;
+  @apply pl-8;
+}
+
+.descriptionContainer {
+  @apply py-4;
+  @apply pl-2;
+}

@@ -1,5 +1,27 @@
-# Satori
+import { Steps } from 'nextra-theme-docs'
 
-Satori (悟り) is a Japanese Buddhist term for awakening, "comprehension; understanding".
+# No Code
 
-# TODO: Use postman
+The easiest way to get started querying the API is to use a tool like [RapidAPI](https://paw.cloud/) or [Postman](https://www.postman.com/).
+
+![Loading participants](https://res.cloudinary.com/letsdothiscom/image/upload/v1683490477/api-docs/participants.png)
+
+The images shown here are for RapidAPI, but Postman works in a very similar fashion.
+
+<Steps>
+ 
+### Step 1: Set URL
+ 
+First, set the URL to `https://api.letsdothis.com/v0/participants`.
+ 
+### Step 2: Include Credentials
+ 
+Set an [Authorization Header](/gettingStarted/authentication) in the `Headers` tab:
+
+![Including Credentials](https://res.cloudinary.com/letsdothiscom/image/upload/v1683490933/api-docs/headers.png)
+
+### Step 3: Submit
+
+And that's it! Now submit your request, and the API will return the first page of Paraticipants in your account.
+ 
+</Steps>

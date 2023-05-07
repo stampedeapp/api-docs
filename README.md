@@ -1,4 +1,4 @@
-# LDT Api Docs
+# LDT Public Api Docs
 
 This site is built using [Nextra](https://nextra.site).
 
