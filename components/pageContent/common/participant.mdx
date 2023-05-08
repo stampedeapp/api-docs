@@ -1,0 +1,120 @@
+import Property from '../../property';
+
+<Property
+  name='id'
+  type='string'
+>
+  A unique identifier for this participant.
+</Property>
+
+<Property
+  name='participantIndex'
+  type='number'
+>
+  The index of this participant in the booking record.
+</Property>
+
+<Property
+  name='bookingId'
+  type='string'
+>
+  The unique identifier for the booking this participant was booked via.
+</Property>
+
+<Property
+  name='transactionId'
+  type='string | undefined'
+>
+  The unique identifier for the transaction this booking was made via, if present.
+</Property>
+
+<Property
+  name='eventOccuranceId'
+  type='string'
+>
+  The unique identifier for the occurance of the Event for which this participant is attending.
+</Property>
+
+<Property
+  name='raceId'
+  type='string'
+>
+  The unique identifier for the race this booking was made for.
+</Property>
+
+<Property
+  name='ticketTitle'
+  type='string'
+>
+  The title of the ticket booked by this participant.
+</Property>
+
+<Property
+  name='createdAt'
+  type='string'
+>
+  The time and date this booking was created, in UTC. Formatted using [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601).
+</Property>
+
+<Property
+  name='updatedAt'
+  type='string'
+>
+  The time and date this booking was last updated, in UTC. Formatted using [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601).
+</Property>
+
+<Property
+  name='fields'
+  type='Field[]'
+>
+  An array of [Field](/common/field) objects relevant to this participant.
+</Property>
+
+<Property
+  name='booker'
+  type='Booker'
+>
+  Contact information for the person who made the booking. See [Booker](/common/booker) for more details.
+</Property>
+
+<Property
+  name='originalTicketPrice'
+  type='Price'
+>
+  The original price for the ticket this participant booked. See [Price](/common/price) for more details.
+</Property>
+
+<Property
+  name='incrementalStatus'
+  type='string'
+>
+  TODO.
+</Property>
+
+<Property
+  name='bibNumber'
+  type='string | undefined'
+>
+  The bib number for this participant, if known.
+</Property>
+
+<Property
+  name='bookingCodesUsed'
+  type='Code[]'
+>
+  Any discount codes applied at booking. See [Code](/common/code) for more details.
+</Property>
+
+<Property
+  name='approvalStatus'
+  type='string | undefined'
+>
+  TODO.
+</Property>
+
+<Property
+  name='applicationResolutionType'
+  type='string | undefined'
+>
+  TODO.
+</Property>

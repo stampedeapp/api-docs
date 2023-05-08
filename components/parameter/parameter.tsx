@@ -1,6 +1,6 @@
 import styles from './parameter.module.css'
 
-type ParameterProps = {
+export type ParameterProps = {
   name: string,
   type: string,
   required: boolean, 

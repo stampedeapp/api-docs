@@ -1,0 +1,38 @@
+import Property from '../../components/property';
+
+# Field
+
+A form field in the booking. Field contains detailed information about the data provided by the booker.
+
+```json
+{
+  "id": "dateOfBirth",
+  "name": "Date of Birth",
+  "value": "1995-12-12"
+},
+```
+
+### Properties
+
+<Property
+  name='id'
+  type='string'
+>
+  The unique ID for each booking field.
+</Property>
+
+<Property
+  name='name'
+  type='string'
+>
+  The name of the booking field.
+</Property>
+
+<Property
+  name='value'
+  type='string'
+>
+  The value provided by the booker for this booking field.
+</Property>
+
+TODO: Document all the differenet values for each type of Booking Field
