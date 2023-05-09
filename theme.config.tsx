@@ -2,7 +2,19 @@ import { useRouter } from "next/router";
 import { DocsThemeConfig, useConfig } from "nextra-theme-docs";
 
 const config: DocsThemeConfig = {
-  logo: <span>Let's Do This - Public API</span>,
+  logo: (
+    <>
+      <img
+        src="https://res.cloudinary.com/letsdothiscom/image/upload/v1664552755/ldt_strip_logo.png"
+        width="24"
+        height="24"
+        alt="Let's Do This - Public API"
+      />
+      <span style={{ padding: "0 8px", fontWeight: "bold" }}>
+        Let's Do This - Public API
+      </span>
+    </>
+  ),
   project: {
     link: "https://github.com/stampedeapp/api-docs",
   },
