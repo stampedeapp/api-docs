@@ -41,6 +41,8 @@ const config: DocsThemeConfig = {
   footer: {
     text: "LDT Public API Docs",
   },
+  primaryHue: 231,
+  darkMode: true,
 };
 
 export default config;
