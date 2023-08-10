@@ -1,11 +1,58 @@
-import { PageWithExamples } from '../../components/pageWithExamples';
+import { Tab, Tabs } from "nextra-theme-docs";
+
+import Applicant from "../../components/pageContent/entities/applicant.mdx";
+import PageData from "../../components/pageContent/entities/pageData.mdx";
+import DefaultQueryParameters from "../../components/queryParams";
+import Authorization from "../../components/headers/authorization.mdx";
 
 # Applications
 
-```bash filename="Example"
-https://api.letsdothis.com/v0/applications
-```
+The Applications endpoint returns a paged list of all applications for a balloted event.
 
-## Preamble
-This is some preamble
+<Tabs items={["Request", "Response"]}>
+  {/* <!-- prettier-ignore --> */}
+  <Tab>
+    ```bash filename="Example"
+      https://api.letsdothis.com/v0/applications
+    ```
+  </Tab>
+  <Tab>
+    TODO
+  </Tab>
+</Tabs>
 
+## Parameters for "Applications"
+
+### Headers
+
+<Authorization />
+
+### Query Parameters
+
+<DefaultQueryParameters />
+
+### Response
+
+<Tabs items={['Shape', 'Example']}>
+  <Tab>
+    ```
+    {
+      data: Applicant[],
+      page: PageData | undefined
+    }
+    ```
+  </Tab>
+  <Tab>
+    TODO
+  </Tab>
+</Tabs>
+
+#### Response Types
+
+##### [Applicant](/entities/applicant)
+
+<Applicant />
+
+##### [PageData](/entities/pageData)
+
+<PageData />

@@ -1,7 +1,10 @@
 {
+  "applicant": "Applicant",
   "booker": "Booker",
   "code": "Code",
   "date": "Date",
   "field": "Field",
-  "pageData": "PageData"
+  "pageData": "PageData",
+  "participant": "Participant",
+  "price": "Price"
 }
