@@ -1,6 +1,5 @@
 {
   "no-code": "No Code",
   "curl": "cURL",
-  "node": "Node",
-  "dotnet": ".Net"
+  "node": "Node"
 }
