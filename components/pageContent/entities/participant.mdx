@@ -1,6 +1,6 @@
 import Property from "../../property";
 
-<Property name="id" type="string">
+<Property name="id" type="ID">
   A unique identifier for this participant.
 </Property>
 
@@ -8,21 +8,21 @@ import Property from "../../property";
   The index of this participant in the booking record.
 </Property>
 
-<Property name="bookingId" type="string">
+<Property name="bookingId" type="ID">
   The unique identifier for the booking this participant was booked via.
 </Property>
 
-<Property name="transactionId" type="string | undefined">
+<Property name="transactionId" type="ID | undefined">
   The unique identifier for the transaction this booking was made via, if
   present.
 </Property>
 
-<Property name="eventOccuranceId" type="string">
+<Property name="eventOccuranceId" type="ID">
   The unique identifier for the occurance of the Event for which this
   participant is attending.
 </Property>
 
-<Property name="raceId" type="string">
+<Property name="raceId" type="ID">
   The unique identifier for the race this booking was made for.
 </Property>
 
@@ -55,7 +55,11 @@ import Property from "../../property";
 </Property>
 
 <Property name="incrementalStatus" type="string">
-  TODO.
+  Whether or not this participant is considered to have been sourced by Let's Do This or not. This field will contain one of the following values:
+
+    * `INCREMENTAL`: The participant was sourced via a Let's Do This managed channel.
+    * `NON_INCREMENTAL`: The participant was sourced via an Organiser managed channel.
+
 </Property>
 
 <Property name="bibNumber" type="string | undefined">

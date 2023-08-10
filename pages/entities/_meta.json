@@ -4,6 +4,7 @@
   "code": "Code",
   "date": "Date",
   "field": "Field",
+  "id": "ID",
   "pageData": "PageData",
   "participant": "Participant",
   "price": "Price"
