@@ -10,8 +10,8 @@
   "s2": {
     "type": "separator"
   },
-  "reference": "Reference",
-  "common": "Common",
+  "endpoints": "Endpoints",
+  "entities": "Entities",
   "about": {
     "title": "About",
     "type": "page",
