@@ -1,5 +1,22 @@
+import { Tab, Tabs } from "nextra-theme-docs";
+
+import PageData from "../../components/pageContent/common/pageData.mdx";
+import Parameter from "../../components/parameter";
+import Participant from "../../components/pageContent/common/participant.mdx";
+import DefaultQueryParameters from "../../components/queryParams";
+
 # Races
 
-```base filename="Example"
-https://api.letsdothis.com/v0/races/123
-```
+The Races endpoint returns a paged list of all participants for the specified race.
+
+<Tabs items={["Request", "Response"]}>
+  {/* <!-- prettier-ignore --> */}
+  <Tab>
+    ```bash filename="Example"
+      https://api.letsdothis.com/v0/races/:id/participants
+    ```
+  </Tab>
+  <Tab>
+    TODO
+  </Tab>
+</Tabs>
