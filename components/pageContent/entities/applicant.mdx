@@ -3,3 +3,93 @@ import Property from "../../property";
 <Property name="id" type="string">
   A unique identifier for this participant.
 </Property>
+
+<Property name="bookingId" type="string">
+  The unique identifier for the booking this participant was booked via.
+</Property>
+
+<Property name="transactionId" type="string | undefined">
+  The unique identifier for the transaction this booking was made via, if
+  present.
+</Property>
+
+<Property name="eventOccuranceId" type="string">
+  The unique identifier for the occurance of the Event for which this
+  participant is attending.
+</Property>
+
+<Property name="raceId" type="ID">
+  The unique identifier for the race this booking was made for.
+</Property>
+
+<Property name="ticketId" type="ID">
+  The unique identifier for the ticket this booking was made using.
+</Property>
+
+<Property name="ticketTitle" type="string">
+  The title of the ticket booked by this participant.
+</Property>
+
+<Property name="eventName" type="string">
+  The name of the Event associated with the booking.
+</Property>
+
+<Property name="raceName" type="string">
+  The name of the Race associated with the booking.
+</Property>
+
+<Property name="raceStartDate" type="string">
+  The time and date at which the race is due to start, in UTC. Formatted using
+  [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601).
+</Property>
+
+<Property name="firstName" type="string">
+  The first name of the applicant.
+</Property>
+
+<Property name="firstName" type="string">
+  The last name of the applicant.
+</Property>
+
+<Property name="isSuccessfulFirstDraw" type="integer | null">
+  For ballots with multiple drawings, this propery describes if the applicant
+  was successful in the first drawing.
+
+    - A `null` value indicates this event does have multiple drawings
+    - A 1 indicates the user was successful during the first draw
+    - A 0 indicates the user was unsuccessful during the first draw
+
+</Property>
+
+<Property name="isSuccessfulSecondDraw" type="integer | null">
+  For ballots with multiple drawings, this propery describes if the applicant
+  was successful in the second drawing.
+
+    - A `null` value indicates this event does have multiple drawings
+    - A 1 indicates the user was successful during the first draw
+    - A 0 indicates the user was unsuccessful during the first draw
+
+</Property>
+
+<Property name="status" type="string">
+  The status of this application. The value of this property will be one of the following enumerations, although please note that new values will be added as additional functionality is added. Calling systems should expect new values to be added to the enum from time to time. Existing values will not be removed outside of a major version upgrade.
+
+    - `CONFIRMED`: The user has the application or registration fully confirmed. For an application, this means the user should be allowed to register for the event. For a registration, this means the user has paid and is fully registered for the event.
+    - `CANCELLED`: The user has cancelled their application or registration. For an application, this means the user should not be allowed to register for the event. For a registration, this means the user has cancelled their registration and should not be allowed to participate in the event.
+    - `DEFERRED`: The userhas deferred their application or registration. This should semantically be equivalent to CANCELLED, with the distinction that the user should be allowed to register for the event in the future.
+    - `PENDING`: The application or registration is not yet confirmed. For an application, this means that manual approval, or a ballot draw, is yet to conclude the application's final status. For a registration, this means that the registration is not yet finalised in some way. The user has been refunded for their registration.
+    - `REFUNDED`: The user has been refunded for their registration.
+    - `REFUNDING`: The user is in the process of being refunded for their registration.
+    - `TO_BE_TRANSFERRED`: The user has requested to transfer their registration, but the transfer has not yet been confirmed.
+    - `TRANSFERRED_EVENTS`: The user has transferred their registration to another event.
+    - `TRANSFERRED_TO_CREDIT`: The user has transferred their registration to credit to their account.
+    - `FAILED`: The application was rejected (either manually, or through ballot failure) as opposed to being cancelled by either the Participant or the Organiser.
+
+</Property>
+
+<>
+  {/* TODO: https://github.com/stampedeapp/data-infra-misc/blob/main/ldtregistrations/helpers/schema.py#L59 */}
+  {/* Should `isApplication`, `bookerType` and `applicationResolutionType` be present
+in this list of properties?
+ */}
+</>
