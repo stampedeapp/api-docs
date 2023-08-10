@@ -2,12 +2,12 @@
   "index": {
     "title": "Introduction"
   },
-  "---": {
+  "s1": {
     "type": "separator"
   },
   "gettingStarted": "Getting Started",
   "quickstarts": "Quickstart",
-  "----": {
+  "s2": {
     "type": "separator"
   },
   "reference": "Reference",
