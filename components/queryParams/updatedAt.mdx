@@ -1,0 +1,16 @@
+import Parameter from "../../components/parameter";
+
+<Parameter name="updatedAt[X]" type="date" required={false}>
+  Limit results to records updated before or after the value provided. See the
+  documentation for [Date](/entities/date) for more details.
+
+  <Parameter name="X" in="path" type="'after' | 'before'" required={true}>
+    Whether to filter records updated after or before the value provided.
+
+    * `after` — Only records updated after the value provided will be returned.
+    * `before` — Only records updated before the value provided will be
+      returned.
+
+  </Parameter>
+
+</Parameter>

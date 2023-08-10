@@ -1,23 +1,19 @@
-import Parameter from '../parameter';
-
-import CreatedAtAfter from './createdAtAfter.mdx';
-import CreatedAtBefore from './createdAtBefore.mdx'
-import UpdatedAtAfter from './updatedAtAfter.mdx';
-import UpdatedAtBefore from './updatedAtBefore.mdx';
-import PageSize from './pageSize.mdx';
-import PageAfter from './pageAfter.mdx';
-import PageBefore from './pageBefore.mdx';
+import CreatedAt from "./createdAt.mdx";
+import UpdatedAt from "./updatedAt.mdx";
+import Sort from "./sort.mdx";
+import PageSize from "./pageSize.mdx";
+import PageAfter from "./pageAfter.mdx";
+import PageBefore from "./pageBefore.mdx";
 
 export const DefaultQueryParameters = () => {
   return (
     <>
-      <CreatedAtAfter />
-      <CreatedAtBefore />
-      <UpdatedAtAfter />
-      <UpdatedAtBefore />
+      <CreatedAt />
+      <UpdatedAt />
+      <Sort />
       <PageSize />
       <PageAfter />
       <PageBefore />
     </>
-  )
-}
+  );
+};

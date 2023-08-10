@@ -1,11 +1,12 @@
 {
-  "applicant": "Applicant",
-  "booker": "Booker",
-  "code": "Code",
-  "date": "Date",
-  "field": "Field",
   "id": "ID",
-  "pageData": "PageData",
+  "date": "Date",
+  "booker": "Booker",
+  "applicant": "Applicant",
   "participant": "Participant",
-  "price": "Price"
+  "field": "Field",
+  "bookingStatus": "BookingStatus",
+  "code": "Code",
+  "price": "Price",
+  "pageData": "PageData"
 }
