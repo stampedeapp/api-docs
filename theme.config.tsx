@@ -37,11 +37,20 @@ const config: DocsThemeConfig = {
     );
   },
   docsRepositoryBase: "https://github.com/stampedeapp/api-docs",
+  useNextSeoProps: () => {
+    return {
+      titleTemplate: "%s – Let's Do This Public API Docs",
+    };
+  },
   footer: {
     text: "LDT Public API Docs",
   },
-  primaryHue: 231,
+  primaryHue: {
+    dark: 65,
+    light: 231,
+  },
   darkMode: true,
+  faviconGlyph: "🏃🏻‍♀️",
 };
 
 export default config;
