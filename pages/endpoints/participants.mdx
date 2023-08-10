@@ -4,6 +4,7 @@ import PageData from "../../components/pageContent/entities/pageData.mdx";
 import Parameter from "../../components/parameter";
 import Participant from "../../components/pageContent/entities/participant.mdx";
 import DefaultQueryParameters from "../../components/queryParams";
+import Authorization from "../../components/headers/authorization.mdx";
 
 import ExampleContent from "../../components/pageContent/endpoints/participants/exampleData.mdx";
 
@@ -27,10 +28,7 @@ The Participants endpoint returns a paged list of all participants for all event
 
 ### Headers
 
-<Parameter name="Authorization" type="string" required={true}>
-  An Authorization header is required to access this resource. See the
-  [Authentication docs](/gettingStarted/authentication) for more information.
-</Parameter>
+<Authorization />
 
 ### Query Parameters
 

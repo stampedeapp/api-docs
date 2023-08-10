@@ -4,6 +4,9 @@ import PageData from "../../components/pageContent/entities/pageData.mdx";
 import Parameter from "../../components/parameter";
 import Participant from "../../components/pageContent/entities/participant.mdx";
 import DefaultQueryParameters from "../../components/queryParams";
+import Authorization from "../../components/headers/authorization.mdx";
+
+import ExampleContent from "../../components/pageContent/endpoints/races/exampleData.mdx";
 
 # Races
 
@@ -17,6 +20,42 @@ The Races endpoint returns a paged list of all participants for the specified ra
     ```
   </Tab>
   <Tab>
-    TODO
+    <ExampleContent />
   </Tab>
 </Tabs>
+
+## Parameters for "Participants"
+
+### Headers
+
+<Authorization />
+
+### Query Parameters
+
+<DefaultQueryParameters />
+
+### Response
+
+<Tabs items={['Shape', 'Example']}>
+  <Tab>
+    ```
+    {
+      data: Participant[],
+      page: PageData | undefined
+    }
+    ```
+  </Tab>
+  <Tab>
+    <ExampleContent />
+  </Tab>
+</Tabs>
+
+#### Response Types
+
+##### [Participant](/entities/participant)
+
+<Participant />
+
+##### [PageData](/entities/pageData)
+
+<PageData />
