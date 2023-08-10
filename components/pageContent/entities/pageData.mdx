@@ -1,36 +1,25 @@
-import Property from '../../property';
+import Property from "../../property";
 
-<Property
-  name='totalResults'
-  type='number'
->
+<Property name="totalResults" type="number">
   The total number of results contained in all pages for this request.
 </Property>
 
-<Property
-  name='first'
-  type='string'
->
-  An opaque cursor pointing to the start of the first page of data for this request.
+<Property name="first" type="ID">
+  An opaque cursor pointing to the start of the first page of data for this
+  request.
 </Property>
 
-<Property
-  name='last'
-  type='string'
->
-  An opaque cursor pointing to the end of the final page of data for this request.
+<Property name="last" type="ID">
+  An opaque cursor pointing to the end of the final page of data for this
+  request.
 </Property>
 
-<Property
-  name='prev'
-  type='string'
->
-  An opaque cursor pointing to the start of the previous page of data for this request.
+<Property name="prev" type="ID | null">
+  An opaque cursor pointing to the start of the previous page of data for this
+  request.
 </Property>
 
-<Property
-  name='next'
-  type='string'
->
-  An opaque cursor pointing to the start of the next page of data for this request.
+<Property name="next" type="ID | null">
+  An opaque cursor pointing to the start of the next page of data for this
+  request.
 </Property>
