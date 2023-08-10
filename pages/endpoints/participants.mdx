@@ -1,18 +1,18 @@
-import { Tab, Tabs } from 'nextra-theme-docs'
+import { Tab, Tabs } from "nextra-theme-docs";
 
-import PageData from '../../components/pageContent/common/pageData.mdx';
-import Parameter from '../../components/parameter';
-import Participant from '../../components/pageContent/common/participant.mdx';
-import DefaultQueryParameters from '../../components/queryParams';
+import PageData from "../../components/pageContent/common/pageData.mdx";
+import Parameter from "../../components/parameter";
+import Participant from "../../components/pageContent/common/participant.mdx";
+import DefaultQueryParameters from "../../components/queryParams";
 
-import ExampleContent from '../../components/pageContent/reference/participants/exampleData.mdx';
+import ExampleContent from "../../components/pageContent/reference/participants/exampleData.mdx";
 
 # Participants
 
 The Participants endpoint returns a paged list of all participants for all events for a given Event Organizer.
 
-
-<Tabs items={['Request', 'Response']}>
+<Tabs items={["Request", "Response"]}>
+  {/* <!-- prettier-ignore --> */}
   <Tab>
     ```bash filename="Example"
       https://api.letsdothis.com/v0/participants
@@ -25,15 +25,11 @@ The Participants endpoint returns a paged list of all participants for all event
 
 ## Parameters for "Participants"
 
-
 ### Headers
 
-<Parameter 
-  name='Authorization' 
-  type='string' 
-  required={true} 
->
-  An Authorization header is required to access this resource. See the [Authentication docs](/gettingStarted/authentication) for more  information.
+<Parameter name="Authorization" type="string" required={true}>
+  An Authorization header is required to access this resource. See the [Authentication
+  docs](/gettingStarted/authentication) for more information.
 </Parameter>
 
 ### Query Parameters
