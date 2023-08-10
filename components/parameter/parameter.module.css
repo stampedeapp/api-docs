@@ -8,6 +8,7 @@
 }
 
 .name {
+  @apply dark:bg-slate-300;
   @apply text-xs text-black font-bold;
   @apply bg-slate-100;
   @apply px-4 py-2;
