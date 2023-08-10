@@ -1,4 +1,4 @@
-import Property from '../../components/property';
+import Property from "../../components/property";
 
 # Field
 
@@ -8,31 +8,29 @@ A form field in the booking. Field contains detailed information about the data 
 {
   "id": "dateOfBirth",
   "name": "Date of Birth",
-  "value": "1995-12-12"
+  "value": "1995-12-31"
 },
 ```
 
 ### Properties
 
-<Property
-  name='id'
-  type='string'
->
+<Property name="id" type="string">
   The unique ID for each booking field.
 </Property>
 
-<Property
-  name='name'
-  type='string'
->
+<Property name="name" type="string">
   The name of the booking field.
 </Property>
 
-<Property
-  name='value'
-  type='string'
->
+<Property name="value" type="string">
   The value provided by the booker for this booking field.
 </Property>
 
-TODO: Document all the differenet values for each type of Booking Field
+## Property Types
+
+In theory any property type can be added to a booking. However, here are common property types that are used in bookings:
+
+- `firstName` — First name of the booker.
+- `lastName` — Last name of the booker.
+- `emailAddress` — Email address of the booker.
+- `status` — Status of the booking, see [BookingStatus](/entities/bookingStatus).

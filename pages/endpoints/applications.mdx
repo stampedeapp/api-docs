@@ -5,19 +5,28 @@ import PageData from "../../components/pageContent/entities/pageData.mdx";
 import DefaultQueryParameters from "../../components/queryParams";
 import Authorization from "../../components/headers/authorization.mdx";
 
+import ExampleContent from "../../components/pageContent/endpoints/applications/exampleData.mdx";
+
 # Applications
 
 The Applications endpoint returns a paged list of all applications for a balloted event.
+
+## Paths for "Applications"
+
+- `/v0/applications` — Returns all applications that you have access to.
+- `/v0/events/:event_id/applications` — Returns all applications for a specific event.
 
 <Tabs items={["Request", "Response"]}>
   {/* <!-- prettier-ignore --> */}
   <Tab>
     ```bash filename="Example"
-      https://api.letsdothis.com/v0/applications
+    curl --request GET \
+      --url "https://api.letsdothis.com/v0/applications" \
+      --header "Authorization: Bearer YOUR-TOKEN"
     ```
   </Tab>
   <Tab>
-    TODO
+    <ExampleContent />
   </Tab>
 </Tabs>
 
@@ -43,7 +52,7 @@ The Applications endpoint returns a paged list of all applications for a ballote
     ```
   </Tab>
   <Tab>
-    TODO
+    <ExampleContent />
   </Tab>
 </Tabs>
 

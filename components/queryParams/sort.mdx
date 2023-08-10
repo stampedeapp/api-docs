@@ -1,0 +1,14 @@
+import Parameter from "../../components/parameter";
+
+<Parameter name="sort[X]" type="1 | -1" required={false}>
+  Sort results by X, either ascending (`1`) or descending (`-1`).
+
+  <Parameter name="X" in="path" type="'createdAt' | 'updatedAt'" required={true}>
+    The field to sort by.
+
+    * `createdAt` — Sort by creation date.
+    * `updatedAt` — Sort by last update date.
+
+  </Parameter>
+
+</Parameter>

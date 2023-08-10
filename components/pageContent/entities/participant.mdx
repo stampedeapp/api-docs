@@ -4,12 +4,13 @@ import Property from "../../property";
   A unique identifier for this participant.
 </Property>
 
-<Property name="participantIndex" type="number">
-  The index of this participant in the booking record.
-</Property>
-
 <Property name="bookingId" type="ID">
   The unique identifier for the booking this participant was booked via.
+</Property>
+
+<Property name="applicationId" type="ID | undefined">
+  If the booking was generated via an application, the unique identifier for
+  that application.
 </Property>
 
 <Property name="transactionId" type="ID | undefined">
@@ -17,13 +18,22 @@ import Property from "../../property";
   present.
 </Property>
 
-<Property name="eventOccuranceId" type="ID">
-  The unique identifier for the occurance of the Event for which this
+<Property name="participantIndex" type="number">
+  The index of this participant in the booking record. For example, if this
+  participant is the first participant in the booking, this field will be `0`.
+</Property>
+
+<Property name="eventOccurenceId" type="ID">
+  The unique identifier for the occurence of the Event for which this
   participant is attending.
 </Property>
 
 <Property name="raceId" type="ID">
   The unique identifier for the race this booking was made for.
+</Property>
+
+<Property name="ticketId" type="ID">
+  The unique identifier for the ticket this booking was made using.
 </Property>
 
 <Property name="ticketTitle" type="string">
@@ -44,8 +54,9 @@ import Property from "../../property";
   An array of [Field](/entities/field) objects relevant to this participant.
 </Property>
 
-<Property name="booker" type="Booker">
-  Contact information for the person who made the booking. See
+<Property name="booker" type="Booker | undefined">
+  Contact information for the person who made the booking, if the booking form
+  was set up to allow a separate booker and participant. See
   [Booker](/entities/booker) for more details.
 </Property>
 
@@ -69,12 +80,4 @@ import Property from "../../property";
 <Property name="bookingCodesUsed" type="Code[]">
   Any discount codes applied at booking. See [Code](/entities/code) for more
   details.
-</Property>
-
-<Property name="approvalStatus" type="string | undefined">
-  TODO.
-</Property>
-
-<Property name="applicationResolutionType" type="string | undefined">
-  TODO.
 </Property>

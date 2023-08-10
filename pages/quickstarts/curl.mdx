@@ -6,22 +6,22 @@ You can send a `GET` request to the API in the following manner:
 
 ```bash
 curl --request GET \
---url "https://api.letsdothis.com/v0/applications" \
---header "Authorization: Bearer YOUR-TOKEN"
+  --url "https://api.letsdothis.com/v0/applications" \
+  --header "Authorization: Bearer YOUR-TOKEN"
 ```
 
 Query parameters must be [URL Encoded](https://en.wikipedia.org/wiki/URL_encoding) manually when using cURL. For example, setting the page size should look like:
 
 ```bash
 curl --request GET \
---url "https://api.letsdothis.com/v0/applications?page%3Fsize%5B=100" \
---header "Authorization: Bearer YOUR-TOKEN"
+  --url "https://api.letsdothis.com/v0/applications?page%3Fsize%5B=100" \
+  --header "Authorization: Bearer YOUR-TOKEN"
 ```
 
 and not
 
 ```bash
 curl --request GET \
---url "https://api.letsdothis.com/v0/applications?page[size]=100" \
---header "Authorization: Bearer YOUR-TOKEN"
+  --url "https://api.letsdothis.com/v0/applications?page[size]=100" \
+  --header "Authorization: Bearer YOUR-TOKEN"
 ```

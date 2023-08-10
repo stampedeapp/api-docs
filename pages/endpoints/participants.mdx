@@ -9,13 +9,20 @@ import ExampleContent from "../../components/pageContent/endpoints/participants/
 
 # Participants
 
-The Participants endpoint returns a paged list of all participants for all events for a given Event Organizer.
+The Participants endpoints returns a paged list of all participants.
+
+## Paths for "Participants"
+
+- `/v0/participants` — Returns all participants that you have access to.
+- `/v0/races/:race_id/participants` — Returns all participants for a specific race.
 
 <Tabs items={["Request", "Response"]}>
   {/* <!-- prettier-ignore --> */}
   <Tab>
     ```bash filename="Example"
-      https://api.letsdothis.com/v0/participants
+    curl --request GET \
+      --url "https://api.letsdothis.com/v0/participants" \
+      --header "Authorization: Bearer YOUR-TOKEN"
     ```
   </Tab>
   <Tab>
