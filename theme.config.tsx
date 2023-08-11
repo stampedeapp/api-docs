@@ -36,7 +36,7 @@ const config: DocsThemeConfig = {
       </>
     );
   },
-  docsRepositoryBase: "https://github.com/stampedeapp/api-docs",
+  docsRepositoryBase: "https://github.com/stampedeapp/api-docs/blob/main",
   useNextSeoProps: () => {
     return {
       titleTemplate: "%s – Let's Do This Public API Docs",
