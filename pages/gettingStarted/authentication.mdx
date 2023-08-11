@@ -1,23 +1,23 @@
 # Authentication
 
-In order to access the Let's Do This Organiser API you will need an API Key. You can find out more about how to optain one in the [Overview](./overview) guide.
+In order to access the Let's Do This API, you will need an API Key. You can find out more about how to obtain one in the [Overview](./overview) guide.
 
-The API uses signed [JSON Web Tokens (JWTs)](https://jwt.io/introduction). These tokens are _not_ encrypted, and the contents can be read by anyone. Rather, a signed token can be used to verify the _integrity_ of _claims_ contained within the token. For example, your token may contain your **Organiser ID**. And even tho anybody with access to your token can read the claims contained within it, they are unable to modify those claims without destroying the integrity of the token.
+The API uses signed [JSON Web Tokens (JWTs)](https://jwt.io/introduction). These tokens are _not_ encrypted, and the contents can be read by anyone. Rather, a signed token can be used to verify the _integrity_ of _claims_ contained within the token. For example, your token may contain your **Organiser ID**. And even though anybody with access to your token can read the claims contained within it, they are unable to modify those claims without destroying the integrity of the token.
 
-Because JWTs **are not encrypted**, your API Key should be treated like any other secret. Do not share it with others, and do not use it in any software that is shipped to the general public - for example a website or native app.
+Because JWTs **are not encrypted**, your API Key should be treated like any other secret. Do not share it with others, and do not use it in any software that is shipped to the general public — for example a website or native app.
 
 ### Authenticating Requests
 
-The REST API requires you authenticate requests in order to fetch information about your event(s). If you are not authenticated, the API will not return any information.
+The REST API requires you authenticate requests in order to fetch information about your events. If you are not authenticated, the API will not return any information.
 
 You can authenticate your request by sending a token in the _Authorization header_ of your request. In the following example, replace `YOUR-API-KEY` with a reference to your API Key:
 
 ```bash
 curl --request GET \
   --url "https://api.letsdothis.com/v0/applications" \
-  --header "Authorization: Bearer YOUR-TOKEN"
+  --header "Authorization: Bearer YOUR-API-KEY"
 ```
 
 ### Revoking Keys
 
-If you believe your API Key has been shared with a 3rd party who sholud not have access to your data, please contact your Partner Success Manager imemdiately so we can revoke and regenerate your key.
+If you believe your API Key has been shared with a 3rd party who should not have access to your data, please contact your Partner Success Manager immediately, so we can revoke and regenerate your key.

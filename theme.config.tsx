@@ -8,10 +8,10 @@ const config: DocsThemeConfig = {
         src="https://res.cloudinary.com/letsdothiscom/image/upload/v1664552755/ldt_strip_logo.png"
         width="24"
         height="24"
-        alt="Let's Do This - Public API"
+        alt="Let's Do This API"
       />
       <span style={{ padding: "0 8px", fontWeight: "bold" }}>
-        Let's Do This - Public API
+        Let's Do This API
       </span>
     </>
   ),
@@ -21,7 +21,7 @@ const config: DocsThemeConfig = {
   head: () => {
     const { asPath, defaultLocale, locale } = useRouter();
     const { title } = useConfig();
-    const pageTitle = title + " - Let's Do This Public API Docs";
+    const pageTitle = title + " - Let's Do This API Docs";
     const url =
       "https://api-docs.letsdothis.com" +
       (defaultLocale === locale ? asPath : `/${locale}${asPath}`);
@@ -39,7 +39,7 @@ const config: DocsThemeConfig = {
   docsRepositoryBase: "https://github.com/stampedeapp/api-docs/blob/main",
   useNextSeoProps: () => {
     return {
-      titleTemplate: "%s – Let's Do This Public API Docs",
+      titleTemplate: "%s – Let's Do This API Docs",
     };
   },
   footer: {

@@ -1,7 +1,7 @@
 {
   "name": "api-docs",
   "version": "0.0.1",
-  "description": "Documentation for the Let's Do This Public API",
+  "description": "Documentation for the Let's Do This API",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
