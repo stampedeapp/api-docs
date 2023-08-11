@@ -1,34 +1,10 @@
 import Applicant from "../../components/pageContent/entities/applicant.mdx";
+import ExampleContent from "../../components/pageContent/endpoints/applications/exampleData.mdx";
 
 # Applicant
 
 Applications (and the applicants within them) are created when a user applies for tickets that are set up to require an application process, such as balloted or "Good For Age" entries. Each applicant represents a single person who has applied for a ticket.
 
-```json
-{
-  "id": "a1",
-  "bookingId": "b1",
-  "eventOccurrenceId": "e1",
-  "raceId": 123,
-  "createdAt": "2021-09-01T07:53:41.612Z",
-  "updatedAt": "2021-09-17T08:50:40.625Z",
-  "fields": [
-    { "name": "First Name", "value": "Stephen" },
-    { "name": "Last Name", "value": "Cook" },
-    {
-      "name": "Address",
-      "value": [
-        { "name": "line1", "value": "Flat 2, 9 Steeles Road" },
-        { "name": "line2", "value": "" },
-        { "name": "city", "value": "London" },
-        { "name": "county", "value": "Greater London" },
-        { "name": "country", "value": "United Kingdom" },
-        { "name": "postcode", "value": "NW3 4RE" }
-      ]
-    },
-    // ...
-  ]
-},
-```
+<ExampleContent />
 
 <Applicant />
