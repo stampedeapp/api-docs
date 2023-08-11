@@ -9,7 +9,7 @@ import ExampleContent from "../../components/pageContent/endpoints/applications/
 
 # Applications
 
-The Applications endpoint returns a paged list of all applications for a balloted event.
+The "Applications" endpoint returns a paged list of all applications. Applications are created when a user applies for tickets that are set up to require an application process, such as balloted or "Good For Age" entries.
 
 ## Paths for "Applications"
 
@@ -47,7 +47,7 @@ The Applications endpoint returns a paged list of all applications for a ballote
     ```
     {
       data: Applicant[],
-      page: PageData | undefined
+      page: PageData
     }
     ```
   </Tab>

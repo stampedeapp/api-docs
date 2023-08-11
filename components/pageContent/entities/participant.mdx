@@ -8,12 +8,12 @@ import Property from "../../property";
   The unique identifier for the booking this participant was booked via.
 </Property>
 
-<Property name="applicationId" type="ID | undefined">
+<Property name="applicationId" type="ID | null">
   If the booking was generated via an application, the unique identifier for
   that application.
 </Property>
 
-<Property name="transactionId" type="ID | undefined">
+<Property name="transactionId" type="ID | null">
   The unique identifier for the transaction this booking was made via, if
   present.
 </Property>
@@ -54,7 +54,7 @@ import Property from "../../property";
   An array of [Field](/entities/field) objects relevant to this participant.
 </Property>
 
-<Property name="booker" type="Booker | undefined">
+<Property name="booker" type="Booker | null">
   Contact information for the person who made the booking, if the booking form
   was set up to allow a separate booker and participant. See
   [Booker](/entities/booker) for more details.
@@ -73,7 +73,7 @@ import Property from "../../property";
 
 </Property>
 
-<Property name="bibNumber" type="string | undefined">
+<Property name="bibNumber" type="string | null">
   The bib number for this participant, if known.
 </Property>
 
