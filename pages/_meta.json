@@ -7,15 +7,16 @@
   },
   "gettingStarted": "Getting Started",
   "quickStarts": "Quick Start",
-  "s2": {
-    "type": "separator"
-  },
-  "endpoints": "Endpoints",
-  "entities": "Entities",
   "about": {
     "title": "About",
     "type": "page",
     "href": "https://www.letsdothis.com/about"
+  },
+  "interactiveDocs": {
+    "title": "Interactive Docs ↗",
+    "type": "page",
+    "href": "https://api.letsdothis.com/documentation",
+    "newWindow": true
   },
   "contact": {
     "title": "Contact ↗",
